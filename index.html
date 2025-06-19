@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #121212;
+      background-color: #000;
       color: #fff;
       display: flex;
       height: 100vh;
@@ -16,24 +16,37 @@
     }
     .sidebar {
       width: 240px;
-      background-color: #1f1f1f;
+      background-color: #0d0d0d;
       padding: 20px;
       box-sizing: border-box;
+      border-right: 1px solid #1c1c1c;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
-    .sidebar h1 {
-      color: #fff;
-      font-size: 24px;
-      margin-bottom: 30px;
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
     }
     .sidebar nav a {
-      display: block;
-      color: #ccc;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
       text-decoration: none;
-      padding: 10px 0;
+      padding: 12px 0;
       font-size: 16px;
+      font-weight: bold;
+      width: 100%;
     }
     .sidebar nav a:hover {
-      color: #fff;
+      color: #fe2c55;
+    }
+    .sidebar nav a img.icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
     }
     .main-feed {
       flex: 1;
@@ -43,15 +56,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: #000;
     }
     .video-card {
-      background: #2b2b2b;
+      background: #1c1c1c;
       padding: 16px;
-      border-radius: 16px;
+      border-radius: 12px;
       width: 100%;
       max-width: 600px;
       margin-bottom: 40px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
     .video-title {
       margin: 10px 0;
@@ -80,16 +94,14 @@
 </head>
 <body>
   <div class="sidebar">
-    <h1>💨 FartTok</h1>
+    <img src="csdUntitled-1.png" alt="FartTok Logo" class="logo" />
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Trending Farts</a>
-      <a href="#">Upload</a>
-      <a href="#">My Profile</a>
+      <a href="#"><img src="csdUntitled-1.png" class="icon" alt="For You icon" /> For You</a>
+      <a href="#"><img src="x-icon.png" class="icon" alt="X icon" /> X</a>
+      <a href="#"><img src="pumpfun-icon.png" class="icon" alt="PumpFun icon" /> PumpFun</a>
     </nav>
   </div>
   <div class="main-feed">
-    <div class="video-card"><div class="video-title">Top 5 Fart Compilation 😂</div><iframe src="https://www.tiktok.com/embed/7481655247673347350"></iframe><button class="sniff-button">Sniff 👃</button></div>
     <div class="video-card"><div class="video-title">Insert fart noise (motherhood)</div><iframe src="https://www.tiktok.com/embed/7238363200142495019"></iframe><button class="sniff-button">Sniff 👃</button></div>
     <div class="video-card"><div class="video-title">Funny Fart Compilation (pro fart)</div><iframe src="https://www.tiktok.com/embed/7399797573160062241"></iframe><button class="sniff-button">Sniff 👃</button></div>
     <div class="video-card"><div class="video-title">I'm sorry SanJay *insert fart*</div><iframe src="https://www.tiktok.com/embed/6811638953263893766"></iframe><button class="sniff-button">Sniff 👃</button></div>
